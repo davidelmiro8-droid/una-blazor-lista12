@@ -1,0 +1,45 @@
+@rendermode InteractiveServer
+<div class="card">
+    <h3>@Titulo</h3>
+
+   <p class="@ClasseTexto">
+    Total: @total pontos
+    </p>
+
+    <button @onclick="Incrementar">
+    + Registrar ação
+</button>
+
+    <div class="barra">
+        <div class="progresso" style="width:@(total)%"></div>
+    </div>
+
+    @if (total >= 100)
+    {
+        <p class="mensagem">🌍 Você é um Herói do Planeta!</p>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public int Peso { get; set; }
+
+    [Parameter]
+    public string Titulo { get; set; } = "";
+
+    
+    private int total = 0;
+    
+    
+    
+    void Incrementar()
+{
+    total += Peso;
+
+    if (total > 100)
+        total = 100;
+}
+    
+
+    string ClasseTexto => total >= 50 ? "verde" : "";
+}

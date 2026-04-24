@@ -1,0 +1,50 @@
+html, body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.card {
+    background: #1e1e2f;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+button {
+    background: #00c853;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00e676;
+}
+
+.barra {
+    background: #444;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.progresso {
+    background: #00c853;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.verde {
+    color: green;
+    font-weight: bold;
+}
+
+.mensagem {
+    margin-top: 10px;
+    font-weight: bold;
+}
